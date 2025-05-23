@@ -3,7 +3,7 @@ import axios from "axios";
 
 function App() {
   const [tasks, setTasks] = useState([]);
-  const [title, setTittle] = useState("");
+  const [title, setTitle] = useState("");
 
   useEffect(() => {
     fetchTasks();
@@ -58,7 +58,7 @@ function App() {
           <input
             type="text"
             value={title}
-            onChange={(e) => setTittle(e.target.value)}
+            onChange={(e) => setTitle(e.target.value)}
             placeholder="Add new task"
             className="flex-1 p-2 text-lg border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
